@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>导航</title>
+		<meta name="keywords" content="" />
+		<meta name="description" content="" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" href="https://cdn.bootcss.com/zui/1.8.1/css/zui.min.css">
+		<script src="https://cdn.bootcss.com/zui/1.8.1/lib/jquery/jquery.js"></script>
+		<script src="https://cdn.bootcss.com/zui/1.8.1/js/zui.min.js"></script>
+		<link rel="stylesheet" href="style.css">
+	</head>
+
+	<body>
+
+		<header>
+			<div class="container" style="padding-right: 0px;padding-left: 0px;">
+				<div class="main">
+					<h1 class="logo">
+						<a href="index.html">
+							<img src="images/logo.png">
+							<span>导航</span>
+						</a>
+					</h1>
+					
+						<div id="time">
+							<script>
+								document.getElementById('time').innerHTML = new Date().toLocaleString()
+					                + ' 星期' + '日一二三四五六'.charAt(new Date().getDay());
+					        setInterval(
+					                "document.getElementById('time').innerHTML=new Date().toLocaleString()+' 星期'+'日一二三四五六'.charAt(new Date().getDay());",
+					                1000);
+					    </script>
+						</div>
+
+						<nav class="nav">
+							<ul>
+								<li><a href="http://212.64.70.61:8080/BookShop/index.jsp" target="_blank"></a></li>
+							</ul>
+						</nav>
+						<button class="nav-btn visible-xs visible-sm">
+							<span class="icon-line top"></span>
+							<span class="icon-line middle"></span>
+							<span class="icon-line bottom"></span>
+						</button>
+					</div>
+				</div>
+
+		</header>
+		<div id="grad1"></div>
+		<div id="content" data-customize="true" data-customtheme="true" class="default-bg">
+			<div class="main-index">
+				<div class="container content-box">
+					<section class="sousuo">
+						<div class="search">
+							<div class="search-box">
+								<img class="search-icon" src="images/logo_4.jpg">
+								<input type="text" id="txt" class="search-input" placeholder="请输入...">
+								<button class="search-btn visible-sm visible-md visible-lg" id="search-btn">go</button>
+								<i class="search-clear icon icon-remove-sign" style="display: none;"></i>
+							</div>
+							<!-- 搜索热词 -->
+							<div class="box search-hot-text" id="box" style="display: none;">
+								<ul></ul>
+							</div>
+							<!-- 搜索引擎 -->
+							<div class="search-engine" style="display: none;">
+								<div class="search-engine-head">
+									<strong class="search-engine-tit">选择默认搜索引擎：</strong>
+									<div class="search-engine-tool">搜索热词： <span id="hot-btn" class="off"></span></div>
+								</div>
+								<ul class="search-engine-list">
+								</ul>
+							</div>
+						</div>
+					</section>
+
+					<div class="row dh">
+						<div class="col-sm-6 col-md-4 mb-3 dh">
+							<div class="row">
+								<div class="col-xs-12"><strong class="dhname" id="1">我的</strong></div>
+								<div class="col-xs-4 mb-2">
+									<a href="http://tty5.top:8080/BookShop/index.jsp" target="_blank">旧书商城</a>
+								</div>
+								<div class="col-xs-4 mb-2">
+
+									<a href="http://212.64.70.61:8080/ChatRoom/" target="_blank">聊天室</a>
+								</div>
+
+								<div class="col-xs-4 mb-2">
+									<a href="http://212.64.70.61:8080/game" target="_blank">小游戏</a>
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+					<hr />
+					<div class="row dh">
+						<div class="col-sm-6 col-md-4 mb-3 dh">
+							<div class="row">
+								<div class="col-xs-12"><strong class="dhname" id="1">校内</strong></div>
+
+								<div class="col-xs-4 mb-2">
+									<a href="http://www.ynau.edu.cn/" target="_blank">农大官网</a>
+								</div>
+								<div class="col-xs-4 mb-2">
+									<a href="http://www.jwgl.ynau.edu.cn/" target="_blank">教务平台1</a>
+								</div>
+
+								<div class="col-xs-4 mb-2">
+									<a href="https://sec.ynau.edu.cn/rump_frontend/login/?next=http://jwgl.sec.ynau.edu.cn/" target="_blank">教务平台2</a>
+								</div>
+								<div class="col-xs-4 mb-2">
+									<a href="http://jwc.ynau.edu.cn/" target="_blank">教务处</a>
+								</div>
+
+								<div class="col-xs-4 mb-2">
+									<a href="https://lib.ynau.edu.cn/index.web" target="_blank">图书馆</a>
+								</div>
+								<div class="col-xs-4 mb-2">
+									<a href="https://zjc.ynau.edu.cn/index" target="_blank">招就处</a>
+								</div>
+
+								<div class="col-xs-4 mb-2">
+									<a href="http://dzzy.ynau.edu.cn" target="_blank">作业平台</a>
+								</div>
+								<div class="col-xs-4 mb-2">
+									<a href="http://202.203.179.247/ncr/default.asp?kcid=535" target="_blank">电子教室</a>
+								</div>
+								<div class="col-xs-4 mb-2">
+									<a href="https://dx.ynau.edu.cn/" target="_blank">网上党校</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-4 mb-3 dh">
+							<div class="row">
+								<div class="col-xs-12"><strong class="dhname" id="1">常用报名入口</strong></div>
+								<div class="col-xs-4 mb-2">
+									<a href="http://cet-bm.neea.edu.cn/" target="_blank">四六级报名</a>
+								</div>
+								<div class="col-xs-4 mb-2">
+
+									<a href="http://cet.neea.edu.cn/cet/" target="_blank">四六级成绩</a>
+								</div>
+
+								<div class="col-xs-4 mb-2">
+									<a href="http://ntce.neea.edu.cn/html1/folder/16013/15-1.htm" target="_blank">教资报名</a>
+								</div>
+								<div class="col-xs-4 mb-2">
+									<a href="https://ncre-bm.neea.cn/" target="_blank">计算机二级</a>
+								</div>
+
+								<div class="col-xs-4 mb-2">
+									<a href="http://cpaexam.cicpa.org.cn/" target="_blank">注册会计师</a>
+								</div>
+								<div class="col-xs-4 mb-2">
+									<a href="https://yz.chsi.com.cn/yzwb/" target="_blank">研究生考试</a>
+								</div>
+
+								<div class="col-xs-4 mb-2">
+									<a href="index.html" target="_blank">待添加</a>
+								</div>
+								<div class="col-xs-4 mb-2">
+									<a href="index.html" target="_blank">待添加</a>
+								</div>
+								<div class="col-xs-4 mb-2">
+									<a href="index.html" target="_blank">待添加</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-4 mb-3 dh">
+							<div class="row">
+								<div class="col-xs-12"><strong class="dhname" id="1">常用工具</strong></div>
+								<div class="col-xs-4 mb-2">
+									<a href="https://mail.qq.com/" target="_blank">QQ邮箱</a>
+								</div>
+								<div class="col-xs-4 mb-2">
+
+									<a href="https://passport.zhihuishu.com/login?service=https%3A%2F%2Fstuonline.zhihuishu.com%2Fstuonline%2F"
+									 target="_blank">智慧树</a>
+								</div>
+
+								<div class="col-xs-4 mb-2">
+									<a href="https://fanyi.sogou.com/" target="_blank">搜狗翻译</a>
+								</div>
+								<div class="col-xs-4 mb-2">
+									<a href="http://fanyi.youdao.com/" target="_blank">有道翻译</a>
+								</div>
+
+								<div class="col-xs-4 mb-2">
+									<a href="https://www.processon.com/" target="_blank">ProcessOn</a>
+								</div>
+								<div class="col-xs-4 mb-2">
+									<a href="https://wenku.baidu.com/" target="_blank">百度文库</a>
+								</div>
+
+								<div class="col-xs-4 mb-2">
+									<a href="https://github.com/" target="_blank">GitHub</a>
+								</div>
+								<div class="col-xs-4 mb-2">
+									<a href="https://www.maliquankai.com/designnav/" target="_blank">码力全开</a>
+								</div>
+								<div class="col-xs-4 mb-2">
+									<a href="http://www.hellofont.cn/" target="_blank">字由</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-4 mb-3 dh">
+							<div class="row">
+								<div class="col-xs-12"><strong class="dhname" id="1">学习资源</strong></div>
+								<div class="col-xs-4 mb-2">
+									<a href="https://www.icourse163.org/" target="_blank">中国大学</a>
+								</div>
+								<div class="col-xs-4 mb-2">
+
+									<a href="https://www.cnki.net/" target="_blank">中国知网</a>
+								</div>
+
+								<div class="col-xs-4 mb-2">
+									<a href="http://opencourse.pku.edu.cn/course/opencourse2/" target="_blank">北大公开课</a>
+								</div>
+								<div class="col-xs-4 mb-2">
+									<a href="https://obook.cc/" target="_blank">偶书</a>
+								</div>
+
+								<div class="col-xs-4 mb-2">
+									<a href="i.chaoxing.com/" target="_blank">超星学习通</a>
+								</div>
+								<div class="col-xs-4 mb-2">
+									<a href="https://www.runoob.com/" target="_blank">菜鸟教程</a>
+								</div>
+
+								<div class="col-xs-4 mb-2">
+									<a href="https://stackoverflow.com/" target="_blank">Stack Overflow</a>
+								</div>
+								<div class="col-xs-4 mb-2">
+									<a href="https://www.csdn.net/" target="_blank">CSDN</a>
+								</div>
+								<div class="col-xs-4 mb-2">
+									<a href="http://www.dxzy163.com/" target="_blank">大学资源网</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-sm-6 col-md-4 mb-3 dh">
+							<div class="row">
+								<div class="col-xs-12"><strong class="dhname" id="1">提升自我</strong></div>
+								<div class="col-xs-4 mb-2">
+									<a href="https://www.xuexi.cn/" target="_blank">学习强国</a>
+								</div>
+								<div class="col-xs-4 mb-2">
+
+									<a href="http://www.qstheory.cn/" target="_blank">求是网</a>
+								</div>
+
+								<div class="col-xs-4 mb-2">
+									<a href="http://www.people.com.cn/" target="_blank">人民网</a>
+								</div>
+								<div class="col-xs-4 mb-2">
+									<a href="http://www.hswh.org.cn/" target="_blank">红色文化网</a>
+								</div>
+
+								<div class="col-xs-4 mb-2">
+									<a href="http://www.wenming.cn/" target="_blank">中国文明网</a>
+								</div>
+								<div class="col-xs-4 mb-2">
+									<a href="http://www.chinaso.com/" target="_blank">中国搜索</a>
+								</div>
+
+								<div class="col-xs-4 mb-2">
+									<a href="http://www.ccyl.org.cn/" target="_blank">共青团中央</a>
+								</div>
+								<div class="col-xs-4 mb-2">
+									<a href="http://www.xinhuanet.com/" target="_blank">新华网</a>
+								</div>
+								<div class="col-xs-4 mb-2">
+									<a href="http://www.cri.cn/" target="_blank">国际在线</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-4 mb-3 dh">
+							<div class="row">
+								<div class="col-xs-12"><strong class="dhname" id="1">娱乐</strong></div>
+								<div class="col-xs-4 mb-2">
+									<a href="https://v.qq.com/" target="_blank">腾讯视频</a>
+								</div>
+								<div class="col-xs-4 mb-2">
+
+									<a href="https://www.bilibili.com/" target="_blank">bilibili</a>
+								</div>
+
+								<div class="col-xs-4 mb-2">
+									<a href="https://www.iqiyi.com/" target="_blank">爱奇艺</a>
+								</div>
+								<div class="col-xs-4 mb-2">
+									<a href="https://m.qidian.com/" target="_blank">起点中文网</a>
+								</div>
+
+								<div class="col-xs-4 mb-2">
+									<a href="https://music.163.com/" target="_blank">网抑云音乐</a>
+								</div>
+								<div class="col-xs-4 mb-2">
+									<a href="https://y.qq.com/" target="_blank">QQ音乐</a>
+								</div>
+
+								<div class="col-xs-4 mb-2">
+									<a href="http://www.guapi.cn/magazines" target="_blank">杂志馆</a>
+								</div>
+								<div class="col-xs-4 mb-2">
+									<a href="https://www.ithome.com/" target="_blank">IT之家</a>
+								</div>
+								<div class="col-xs-4 mb-2">
+									<a href="https://www.duzhe.com/#/" target="_blank">读者</a>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		</div>
+		</div>
+		<footer class="footer text-center bg-white">
+			<div class="container">
+				<span id="hitokoto">:D 获取中...</span>
+			</div>
+		</footer>
+		<div id="get-top" title="回到顶部" style="display: none;"><i class="icon icon-arrow-up"></i></div>
+		<script src="https://v1.hitokoto.cn/?encode=js&select=%23hitokoto" defer></script>
+		<script src="js.js"></script>
+		<script type="text/javascript" src="https://js.users.51.la/19916167.js"></script>
+
+	</body>
+</html>
